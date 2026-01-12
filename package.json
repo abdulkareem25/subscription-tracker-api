@@ -8,12 +8,14 @@
     "dev": "set NODE_ENV=development && nodemon app.js"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^17.2.0",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
     "mongoose": "^8.16.3",
-    "morgan": "~1.9.1"
+    "morgan": "^1.10.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",

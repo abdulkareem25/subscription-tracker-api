@@ -1,11 +1,10 @@
 import express from 'express';
+import morgan from 'morgan';
 import { PORT } from './config/env.js';
 import connectToDb from './config/db.js';
-
 import authRouter from './routes/auth.routes.js';
 import userRouter from './routes/user.routes.js';
 import subcriptionRouter from './routes/subscription.routes.js';
-import morgan from 'morgan';
 
 
 const app = express();
