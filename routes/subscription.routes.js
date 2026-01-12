@@ -8,7 +8,7 @@ subcriptionRouter.post('/',(req, res) => res.send({title: "create subscription"}
 subcriptionRouter.put('/:id',(req, res) => res.send({title: "update subscription"}))
 subcriptionRouter.delete('/:id',(req, res) => res.send({title: "delete subscription"}))
 subcriptionRouter.get('/user/:id',(req, res) => res.send({title: "get All user subscriptions"}))
-subcriptionRouter.get('/:id/cancel',(req, res) => res.send({title: "calcel subscriptions"}))
+subcriptionRouter.get('/:id/cancel',(req, res) => res.send({title: "cancel subscription"}))
 subcriptionRouter.get('/upcoming-renewals',(req, res) => res.send({title: "get upcoming renewals"}))
 
 export default subcriptionRouter;
