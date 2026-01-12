@@ -3,7 +3,7 @@ import User from "../models/user.model";
 import bcrypt from bcrypt;
 
 
-export const signUp = async (req, res, next) {
+export const signUp = async (req, res, next) => {
     const session = await startSession();
     session.startTransaction();
 
