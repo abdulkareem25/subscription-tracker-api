@@ -96,5 +96,16 @@ export const signIn = async (req, res) => {
 };
 
 export const signOut = async (req, res) => {
+    try {
+        // Clear the token (client-side) and respond with success
+        res.status(200).json({ 
+            message: "Logout successful" 
+        });
 
+    } catch (err) {
+        console.error('SignOut Error:', err.message);
+        res.status(500).json({ 
+            message: "An error occurred during logout. Please try again." 
+        });
+    }
 };
